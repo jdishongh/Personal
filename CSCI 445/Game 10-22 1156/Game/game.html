@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>Just Shoot</title>
+<meta name="description" content="Web game">
+<meta name="author" content="Team CSS">
+<meta charset="utf-8">
+<base target="_self">
+<link rel="stylesheet" type="text/css" href="game.css" />
+<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Marko One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat Subrayada' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Notable' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
+
+<link rel="icon" href="images/thumbnail.png">
+</head>
+<body>
+
+
+<header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</header>
+
+<main>
+  <section id="animation">
+    <h1>Just Shoot</h1>
+  </section>
+  <section id="info">
+    <p id="limit">Limit</p>
+    <p id="health">Health</p>
+  </section>
+
+    <section id="gameArea">
+        <canvas id="myCanvas" width="600" height="600"></canvas>
+    </section>
+
+    <section id="menuArea">
+        <p id="win">You Win!</p>
+        <p id="lose">You Lose!</p>
+        <article id="titleholder">
+          <p id="title" data-text="Just Shoot">Just Shoot</p>
+          <p id="end" data-text="Game Over">Game Over</p>
+        </article>
+        
+        <button id="playButton" class="menuButton" data-text="Play">Play</button>
+        
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+              <filter id="bevel">
+                <feMorphology operator="dilate" radius="3" in="SourceGraphic" result="bevel" />
+              </filter>
+
+              <filter id="pixelate" x="0" y="0">
+                <feFlood x="4" y="4" height="2" width="2"/>
+                
+                <feComposite width="10" height="10"/>
+                
+                <feTile result="a"/>
+                
+                <feComposite in="SourceGraphic" in2="a" 
+                             operator="in"/>
+                
+                <feMorphology operator="dilate"
+                              radius="5"/>
+              </filter>
+              
+           
+            </defs>
+        </svg>
+
+    </section>
+    
+
+    <img id="player" src="images/Gunner_Blue.png" alt = "ball">
+    <img id="crosshair" src="images/crosshair.png" alt = "crosshair">
+    <img id="enemy" src="images/Gunner_Red.png" alt = "red">
+    <img id="bullet" src="images/Bullet.png" alt = "projectile">
+    <img id="menuBackground" src="images/menuBackground.jpg" alt= "synthwave background dot jpeg, lol">
+    <img id="ground" src="images/ground.jpg" alt="synwave ground dot jpeg, kek">
+
+</main>
+
+<aside>
+
+</aside>
+
+<script src="game.js"></script>
+
+<footer>
+
+</footer>
+
+
+
+</body>
+</html>

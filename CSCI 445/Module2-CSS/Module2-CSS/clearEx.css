@@ -1,0 +1,25 @@
+#turtle_left{
+  float: left;
+  border-style:inset;
+  border-color: black;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+div.div3{
+  background-color: yellow;
+  width: 600px;
+}
+#cat_right{
+  float: right;
+  border-style:solid;
+  border-color: black;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+div.div4{
+  background-color: pink;
+  width: 600px;
+}
+br.clear-it{
+  clear:both;
+}

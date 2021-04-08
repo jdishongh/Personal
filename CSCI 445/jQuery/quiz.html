@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jason Dishongh">
+    <link rel="stylesheet" type="text/css" href="quiz.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="quiz.js"></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Testing Car Knowledge</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h4>Question: (Select a Category Below)</h4>
+            <div class="question">
+                <p class="questionDisplayed"></p>
+            </div>
+            <h4>Answer:</h4>
+            <div class="answer">
+                <div class="choice">
+                    <input type="radio" id="true" name="result" value="1" />
+                    <label for="true">True</label>
+                    <input type="radio" id="false" name="result" value="0" />
+                    <label for="false">False</label>
+                    <button class="checkResult">Check Answer</button>
+                    <p class="subNotice"></p>
+                </div>
+            </div>
+            <div class="topics">
+                <button class="ford">Ford</button>
+                <button class="ferrari">Ferrari</button>
+                <button class="koenigsegg">Koenigsegg</button>
+                <button class="nissan">Nissan</button>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <h2>Questions Attempted:</h2>
+        <ul id="attempted"></ul>
+        <p class="gameStatus"></p>
+    </aside>
+    <footer>
+        <h2>Created By Jason Dishongh</h2>
+    </footer>
+</body>
+</html>

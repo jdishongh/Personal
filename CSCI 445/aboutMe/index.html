@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" type="text/css" href="tables.css" />
+  <link rel="stylesheet" type="text/css" href="nav.css" />
+  <meta name="author" content="Jason Dishongh">
+  <title>Home Page</title>
+</head>
+<body>
+  <nav class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <section class="dropdown">
+      <button class="dropbtn">CSS Tutorials<strong class="fa fa-caret-down"></strong>
+      </button>
+      <section class ="dropdown-content">
+        <a href="./Module2/turtlecoders.html">Turtle Coders</a>
+        <a href="./Module2/posEx.html">Position Example</a>
+        <a href="./Module2/clearEx.html">Float and Clear</a>
+      </section>
+    </section>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </nav>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <section>
+    <header>
+      <h1 id="about">Welcome to Jason Dishongh's Home Page</h1>
+    </header>
+    <hr>
+    <p>My favorite food is pizza and I am really into cars.</p>
+  </section>
+  <section>
+    <header>
+      <h1>Contact Info</h1>
+    </header>
+    <a href="mailto:jdishongh@mymail.mines.edu">Email Link</a>
+  </section>
+</body>
+<footer>
+  <p><a href="#top">Back to Top</a></p>
+</footer>

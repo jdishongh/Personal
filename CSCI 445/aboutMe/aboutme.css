@@ -1,0 +1,40 @@
+/*1.At least two elements with specified fonts*/
+h1,h2 {
+  font-family: Arial, sans-serif;
+}
+p {
+  font-size: 16px;
+}
+/*3.Style the HTML code (put it in a div, if not already done)*/
+/*4.Style one or more aspects of an element with a class selector*/
+.code{
+  color: green;
+}
+/*2.A background image (may be repeated, doesn't have to be for the entire page)*/
+.hobby{
+  background-image: url(funny.gif);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+/*6.Style the image(s) as you see fit*/
+img.climb{
+  width: 300px;
+  height: 500px;
+}
+/*5.Style one or more aspects of an element with a id selector*/
+body{
+  background-color: lightyellow;
+}
+/*7. Style each of the following pseudo-classes differently*/
+a:link{
+  color:orange;
+}
+a:visited{
+  color:blue;
+}
+a:hover{
+  color:red;
+}
+a:active{
+  color:brown;
+}

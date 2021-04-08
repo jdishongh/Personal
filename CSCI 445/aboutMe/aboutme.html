@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--
+      A title for your document - All about Jason Dishongh
+      At least two levels of headers - About Me, Where I'm From, Hobbies, Other Info
+      At least one paragraph - Info sections
+      At least one list - Visited Ski Resorts
+      At least one code snippet - Circle Code
+      At least one hyperlink to an external site - Evo Rock Link
+      At least one html link to an anchor within the same document - Back to Top link
+      At least one mailto - My personal Email Address
+      At least one line break - After Photos and List
+      At least one horizontal rule - After About Me and Other Info
+      At least one text format other than bold or italics - Highlight Data Science
+      At least one HTML comment - Current Checklist
+      At least two meta tags - charset and author
+      At least one quotation - Sharma quote
+      At least one HTML entity - Scarpa Copyright
+      At least one HTML symbol - Evo Rock Copyright
+      At least one image (place all images inside a folder named images) - Climbing Pictures
+  -->
+  <link rel="stylesheet" type="text/css" href="aboutme.css" />
+  <link rel="stylesheet" type="text/css" href="tables.css" />
+  <link rel="stylesheet" type="text/css" href="nav.css" />
+  <meta name="author" content="Jason Dishongh">
+  <title>All about Jason Dishongh</title>
+</head>
+<body>
+<nav class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <section class="dropdown">
+    <button class="dropbtn">CSS Tutorials<strong class="fa fa-caret-down"></strong>
+    </button>
+    <section class ="dropdown-content">
+      <a href="./Module2/turtlecoders.html">Turtle Coders</a>
+      <a href="./Module2/posEx.html">Position Example</a>
+      <a href="./Module2/clearEx.html">Float and Clear</a>
+    </section>
+  </section>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<section id="wrapper">
+  <header>
+    <h1 id="about">About Me</h1>
+  </header>
+  <hr>
+</section>
+<section>
+  <header>
+    <h2>Where I'm From</h2>
+  </header>
+  <p>I am from Westminster, CO. I am currently a Senior and I am on the <mark>Data Science track</mark>.</p>
+</section>
+<section>
+  <header>
+    <h3>Hobbies</h3>
+  </header>
+  <section class="hobby">
+    <header>
+      <h4>Activities</h4>
+    </header>
+    <p>I like to snowboard, longboard, work on my car, and go rock climbing</p>
+    <img class="climb" src="images/Mono.png" alt="Mono Hold">
+    <img class="climb" src="images/Double_Arete.png" alt="Attempting Double Arete">
+    <br>
+    <br>
+  </section>
+  <section>
+    <header>
+      <h4>Favorite Indoor Climbing Gym</h4>
+    </header>
+    <a href="https://www.evorock.com/louisville-co/">Evo Rock &#169;</a>
+    <br>
+    <img src="images/Evo.jpg" alt="Evo Rock Climbing Gym">
+  </section>
+  <section>
+    <header>
+      <h4>My Favorite Brand of Climbing Shoes</h4>
+    </header>
+    <a href="https://www.scarpa.com/">Scarpa &copy;</a>
+    <img src="images/Shoes.jpg" alt="Instinct Shoes">
+    <br>
+  </section>
+  <section>
+    <header>
+      <h4 id="list">Colorado Ski Resorts I have visited</h4>
+    </header>
+    <ul>
+      <li>Winter Park</li>
+      <li>Copper Mountain</li>
+      <li>Arapahoe Basin</li>
+      <li>Keystone</li>
+      <li>Breckenridge</li>
+      <li>Loveland</li>
+    </ul>
+    <br>
+    <br>
+  </section>
+  <section>
+    <header>
+      <h2>Other Info</h2>
+    </header>
+    <hr>
+    <p>A nice quote from one of best climbers in the world: "The best part of climbing is when it all clicks and gravity ceases to exist.” – Chris Sharma</p>
+    <p>If you wish to email me please use the link below:</p>
+    <a href="mailto:jdishongh@mymail.mines.edu">Email Link</a>
+  </section>
+  <section>
+    <header>
+      <h2>Code</h2>
+    </header>
+      <code>
+        x=1;<br>
+        y=1;<br>
+        x^2+y^2=1;
+      </code>
+  </section>
+</section>
+<section>
+  <header>
+    <h2>Tables</h2>
+  </header>
+  <table class="car">
+    <caption class="car">Favorite Cars</caption>
+    <thead class="car">
+      <tr class="car">
+        <th class="car">Manufacturer</th>
+        <th class="car">Vehicle</th>
+      </tr>
+    </thead>
+    <tr class="car">
+      <td rowspan="3" >Nissan</td>
+      <td>Silvia S15</td>
+    </tr>
+    <tr class="car">
+      <td>R34 GTR</td>
+    </tr>
+    <tr class="car">
+      <td>R35 GTR</td>
+    </tr>
+    <tr class="car">
+      <td>Toyota</td>
+      <td>Mk4 Supra</td>
+    </tr>
+    <tr class="car">
+      <td>Koenigsegg</td>
+      <td>One:1</td>
+    </tr>
+    <tr class="car">
+      <td>Porsche</td>
+      <td>911 GT3</td>
+    </tr>
+  </table>
+  <table class="color">
+    <caption class="color">Favorite Color</caption>
+    <thead class="color">
+      <tr class="color">
+        <th class="color">Name</th>
+        <th class="color">Color</th>
+      </tr>
+    </thead>
+    <tr class="color">
+        <td>Oliver</td>
+        <td>Black</td>
+    </tr>
+    <tr class="color">
+        <td>Grant</td>
+        <td>Green</td>
+    </tr>
+    <tr class="color">
+        <td>Dan</td>
+        <td>Green</td>
+    </tr>
+    <tr class="color">
+        <td>Chris</td>
+        <td>Blue</td>
+    </tr>
+    <tr class="color">
+        <td>Jason</td>
+        <td>Blue</td>
+    </tr>
+  </table>
+  <table class="food">
+    <caption class="food">Favorite Food</caption>
+    <thead class="food">
+      <tr class="food">
+        <th class="food">Name</th>
+        <th class="food">Food</th>
+        <th class="food">Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="food">
+        <td>Oliver</td>
+        <td>Steak</td>
+        <td>$15</td>
+      </tr>
+      <tr class="food">
+        <td>Grant</td>
+        <td>Pasta</td>
+        <td>$8</td>
+      </tr>
+      <tr class="food">
+        <td>Dan</td>
+        <td>Steak & Pasta</td>
+        <td>$22</td>
+      </tr>
+      <tr class="food">
+        <td>Chris</td>
+        <td class="bottom">Omelete</td>
+        <td>$8</td>
+      </tr>
+      <tr class="food">
+        <td>Jason</td>
+        <td>Pizza</td>
+        <td>$7</td>
+      </tr>
+    </tbody>
+    <tfoot class="food">
+      <tr>
+        <td colspan="3">Total Cost: $60</td>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+<section>
+  <header>
+    <h3>Useful Link</h3>
+  </header>
+  <p><a href="#top">Back to Top</a></p>
+</section>
+</body>

@@ -1,0 +1,84 @@
+/*1Solid border around the table and between cells*/
+table.food{
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 300px;
+  width: 500px;
+  text-align:left;
+  /*7. Tables should be centered, with a top margin to provide space between tables*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+/*1Solid border around the table and between cells*/
+tr.food *{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/*2. Background color for the header with a complementary font color*/
+tr.food th{
+  background-color: white;
+  color: darkblue;
+}
+/*3. Header and footer of a single table are different colors (background & text)*/
+tfoot.food{
+  background-color: red;
+  color: white;
+}
+/*4. Dashed bottom border for some td element (do not overlap other borders)*/
+tr.bottom{
+  border-bottom: dashed;
+}
+/*5. Special styling for either first or last element  (hint: use last-of-type or first-of-type pseudo-class)*/
+tr.food td:last-of-type{
+  font-weight: bold;
+}
+/*6. Background color for alternating rows (hint: nth-of-type pseudo-class)*/
+tr.food:nth-of-type(2n){
+  background-color: #f2f2f2;
+}
+/*8. Use reasonable formatting for the captions.  They should stand out from the rest of the headers and tables on the page.*/
+caption.food{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+table.car{
+  border: 5px dashed green;
+  border-collapse: collapse;
+  height: 400px;
+  width: 400px;
+  text-align: right;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: lightblue;
+}
+tr.car *{
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-weight: bold;
+  font-style: italic;
+}
+
+table.color{
+  border: 10px ridge green;
+  border-collapse: collapse;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  margin-right: auto;
+  margin-left:auto;
+  margin-top: 30px;
+  background-color: black;
+  color:white;
+}
+tr.color *{
+  border: 1px solid white;
+  border-collapse: collapse;
+  font-weight: bold;
+  font-style:oblique;
+}
+caption.color{
+  color:black;
+  font-weight: bold;
+}
